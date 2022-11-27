@@ -24,15 +24,14 @@ public class Viewers {
 	private Date datecreatedTime;
 	private Date lastUpdateTime;
 	private String deviceID;
-	private String socailUserID;
+	private String socialUserID;
 	private String socialToken;
 	
 	
-	public Viewers(int viewerID, String email, Date dob, String laguage, String gender, String name,
+	public Viewers( String email, Date dob, String laguage, String gender, String name,
 			String mobileNumber, String verified, String country, Date datecreatedTime, Date lastUpdateTime,
 			String deviceID, String socailUserID, String socialToken) {
 		super();
-		this.viewerID = viewerID;
 		this.email = email;
 		this.dob = dob;
 		this.laguage = laguage;
@@ -44,12 +43,18 @@ public class Viewers {
 		this.datecreatedTime = datecreatedTime;
 		this.lastUpdateTime = lastUpdateTime;
 		this.deviceID = deviceID;
-		this.socailUserID = socailUserID;
+		this.socialUserID = socailUserID;
 		this.socialToken = socialToken;
 	}
 
 	public Viewers() {
 		super();
+	}
+
+	public Viewers(String email2, Date dob2, String language, String gender2, String name2, String mobileNumber2,
+			String verified2, String country2, String dateCreatedTime2, String lastUpdateTime2, String deviceId2,
+			String socialUserId2, String socialToken2) {
+		// TODO Auto-generated constructor stub
 	}
 
 	public int getViewerID() {
@@ -149,11 +154,11 @@ public class Viewers {
 	}
 
 	public String getSocailUserID() {
-		return socailUserID;
+		return socialUserID;
 	}
 
 	public void setSocailUserID(String socailUserID) {
-		this.socailUserID = socailUserID;
+		this.socialUserID = socailUserID;
 	}
 
 	public String getSocialToken() {
